@@ -25,7 +25,7 @@ Since we are iterating over a discrete set $M$ of $s$ values representing the in
 
 The gradient of this summation is computed and implemented in [mobius.py](mobius.py) as the function `Mobius_gradient`.
 
-# The gradient flow approximation
+# Gradient flow approximation
 Implements a simple forward Euler method with respect to the above system. 
 The scheme includes an dynamic step size which bounds the spatial step size and helps with stability.
 
