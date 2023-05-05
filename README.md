@@ -1,9 +1,7 @@
 # numerical-knot-untangling
 
 This is an ongoing research project for untangling knots numerically, currently consisting of an implementation for the Möbius knot energy minimization.  
-
-The implementation consists of two main parts:
-Mobius energy gradient computation
+# Mobius energy
 The **Möbius energy** is defined as such:
 
 $$
