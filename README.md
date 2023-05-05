@@ -5,17 +5,17 @@ This is an ongoing research project for untangling knots numerically, currently 
 The implementation consists of two main parts:
 Mobius energy gradient computation
 The **Möbius energy** is defined as such:
- $$
-\mathcal{E}(\gamma)=\iint _{M^{2}} \frac{1}{|\gamma(u)-\gamma(v) |^{2}}-\frac{1}{d(u,v)^{2}} \, dv \, du 
-$$
+
+$$ \mathcal{E}(\gamma)=\iint _{M^{2}} \frac{1}{|\gamma(u)-\gamma(v) |^{2}}-\frac{1}{d(u,v)^{2}} \, dv \, du $$
+
 where:
 - $\gamma(u):M\to\mathbb{R}^{3}$ is a parameterized curve representing a knot.
 - $u$ is the parameter and denotes a length along $\gamma$
 - $d(u,v)$ denotes the shortest distance  between $u$ and  $v$ *along* the curve 
 
 Roughly, since the curve $\gamma$ is completely described by a list of vertices, we use the following system
-$$
-\begin{bmatrix}
+
+$$\begin{bmatrix}
 \gamma_{t}^{(1)} \\
 \gamma_{t}^{(2)} \\
 \vdots \\
@@ -25,13 +25,11 @@ $$
 \mathcal{E}_{\gamma^{(2)}} \\
 \vdots \\
 \mathcal{E}_{^{\gamma^{(N)}}}
-\end{bmatrix}
-$$
+\end{bmatrix}$$
 
 Since we are iterating over a discrete set $M$ of $s$ values representing the indices of our vertices, the discretized energy $\hat{\mathcal{E}}$ is expressed by the following summation
-$$
-\hat{\mathcal{E}}_{\gamma^{(i)}}= \frac{\partial}{\partial \gamma^{(i)}}\sum_{u}^{N}\sum_{v}^{N} \frac{1}{|\gamma^{(u)}-\gamma^{(v)}|^{2}}- \frac{1}{d(u,v)^{2}}
-$$
+
+$$ \hat{\mathcal{E}}_{\gamma^{(i)}}= \frac{\partial}{\partial \gamma^{(i)}}\sum_{u}^{N}\sum_{v}^{N} \frac{1}{|\gamma^{(u)}-\gamma^{(v)}|^{2}}- \frac{1}{d(u,v)^{2}} $$
 
 Which is computed and implemented in [mobius.py](mobius.py) as the function `Mobius_gradient`.
 
