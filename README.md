@@ -36,3 +36,5 @@ The file [curve.py](curve.py) contains the geometry manipulation function utilit
 ![reefknot.gif](./assets/reeefknot.gif)
 ### Torus knot $T_{4,1}$
 ![torus.gif](./assets/torus.gif)
+### Hourglass gradient visualization
+![hourglass.gif](./assets/hourglass.gif)
