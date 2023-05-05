@@ -1,6 +1,6 @@
 # numerical-knot-untangling
 
-This is an ongoing research project untangling knots numerically, consisting of the numerical approximation of the Mobius knot energy minimization.  
+This is an ongoing research project for untangling knots numerically, consisting of the numerical approximation of the Mobius knot energy minimization.  
 
 The implementation consists of two main parts:
 1. The Mobius energy gradient computation\
