@@ -3,7 +3,7 @@
 This is an ongoing research project for untangling knots numerically, currently consisting of an implementation for the Möbius knot energy minimization.  
 
 The implementation consists of two main parts:
-1. The Mobius energy gradient computation\
+# The Mobius energy gradient computation\
 The **Möbius energy** is defined as such:
  $$
 \mathcal{E}(\gamma)=\iint _{M^{2}} \frac{1}{|\gamma(u)-\gamma(v) |^{2}}-\frac{1}{d(u,v)^{2}} \, dv \, du 
@@ -35,8 +35,8 @@ $$
 
 Which is computed and implemented in [mobius.py](mobius.py) as the function `Mobius_gradient`.
 
-2. The gradient descent algorithm
-Implements a simple forward Euler method to compute the gradient descent of the Mobius energy with discretization in time with respect to the above system. 
+# The gradient flow approximation
+Implements a simple forward Euler method with respect to the above system. 
 The scheme includes an dynamic step size which bounds the spatial step size and helps with stability.
 
 The main file is [mobius.py](mobius.py) which the Mobius energy gradient computation. \
