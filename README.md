@@ -6,7 +6,9 @@ The implementation consists of two main parts:
 Mobius energy gradient computation
 The **Möbius energy** is defined as such:
 
-$$ \mathcal{E}(\gamma)=\iint _{M^{2}} \frac{1}{|\gamma(u)-\gamma(v) |^{2}}-\frac{1}{d(u,v)^{2}} \, dv \, du $$
+$$
+\mathcal{E}(\gamma)=\iint _{M^{2}} \frac{1}{|\gamma(u)-\gamma(v) |^{2}}-\frac{1}{d(u,v)^{2}} \, dv \, du 
+$$
 
 where:
 - $\gamma(u):M\to\mathbb{R}^{3}$ is a parameterized curve representing a knot.
@@ -15,23 +17,13 @@ where:
 
 Roughly, since the curve $\gamma$ is completely described by a list of vertices, we use the following system
 
-$$\begin{bmatrix}
-\gamma_{t}^{(1)} \\
-\gamma_{t}^{(2)} \\
-\vdots \\
-\gamma_{t}^{(N)}
-\end{bmatrix}=-\begin{bmatrix}
-\mathcal{E}_{\gamma^{(1)}} \\
-\mathcal{E}_{\gamma^{(2)}} \\
-\vdots \\
-\mathcal{E}_{^{\gamma^{(N)}}}
-\end{bmatrix}$$
+$$
+\gamma_t = -\nabla \mathcal{E}_\gamma
+$$
 
-Since we are iterating over a discrete set $M$ of $s$ values representing the indices of our vertices, the discretized energy $\hat{\mathcal{E}}$ is expressed by the following summation
+Since we are iterating over a discrete set $M$ of $s$ values representing the indices of our vertices, the discretized energy $\hat{\mathcal{E}}$ is expressed by approximate the double integral by a double summation.
 
-$$ \hat{\mathcal{E}}_{\gamma^{(i)}}= \frac{\partial}{\partial \gamma^{(i)}}\sum_{u}^{N}\sum_{v}^{N} \frac{1}{|\gamma^{(u)}-\gamma^{(v)}|^{2}}- \frac{1}{d(u,v)^{2}} $$
-
-Which is computed and implemented in [mobius.py](mobius.py) as the function `Mobius_gradient`.
+The gradient of this summation is computed and implemented in [mobius.py](mobius.py) as the function `Mobius_gradient`.
 
 # The gradient flow approximation
 Implements a simple forward Euler method with respect to the above system. 
