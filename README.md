@@ -19,7 +19,7 @@ $$
 \gamma_t = -\nabla \mathcal{E}_\gamma
 $$
 
-Since we are iterating over a discrete set $M$ of $s$ values representing the indices of our vertices, the discretized energy $\hat{\mathcal{E}}$ is expressed by approximate the double integral by a double summation.
+The discretized energy $\hat{\mathcal{E}}$ is expressed by a double summation because we iterate over a discrete set $M$ of arc-length $s$ values representing the indices of our vertices.
 
 The gradient of this summation is computed and implemented in [mobius.py](mobius.py) as the function `Mobius_gradient`.
 
