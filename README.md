@@ -5,7 +5,7 @@ This is an ongoing research project for untangling knots numerically, currently 
 The **Möbius energy** is defined as such:
 
 $$
-\mathcal{E}(\gamma)=\iint _{M^{2}} \frac{1}{|\gamma(u)-\gamma(v) |^{2}}-\frac{1}{d(u,v)^{2}} \; dv \; du 
+\mathcal{E}(\gamma)=\iint _{M^{2}} \frac{1}{|\gamma(u)-\gamma(v) |^{2}}-\frac{1}{d(u,v)^{2}} \quad dv \quad du 
 $$
 
 where:
