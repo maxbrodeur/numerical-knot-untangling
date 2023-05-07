@@ -28,8 +28,8 @@ Implements a simple forward Euler method with respect to the above system.
 The scheme includes an dynamic step size which bounds the spatial step size and helps with stability.
 
 # Structure
-- Main file is [mobius.py](mobius.py) containing the Mobius energy gradient computation. \
-- [config.py](config.py) contains the configuration parameters for the Mobius energy gradient computation such as .obj file and visualization parameters.\
+- [mobius.py](mobius.py) containing the Mobius energy gradient computation. 
+- [config.py](config.py) contains the configuration parameters for the Mobius energy gradient computation such as .obj file and visualization parameters.
 - [curve.py](curve.py) contains geometry manipulation utility functions such as reading obj files.
 
 # Results
