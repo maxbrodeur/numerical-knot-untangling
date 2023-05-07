@@ -27,9 +27,10 @@ The gradient of this summation is computed and implemented in [mobius.py](mobius
 Implements a simple forward Euler method with respect to the above system. 
 The scheme includes an dynamic step size which bounds the spatial step size and helps with stability.
 
-The main file is [mobius.py](mobius.py) which the Mobius energy gradient computation. \
-The file [config.py](config.py) contains the configuration parameters for the Mobius energy gradient computation such as .obj file and visualization parameters.\
-The file [curve.py](curve.py) contains the geometry manipulation function utility functions such as reading obj files.
+# Structure
+- Main file is [mobius.py](mobius.py) containing the Mobius energy gradient computation. \
+- [config.py](config.py) contains the configuration parameters for the Mobius energy gradient computation such as .obj file and visualization parameters.\
+- [curve.py](curve.py) contains geometry manipulation utility functions such as reading obj files.
 
 ## Result
 ### Closed reef knot (two disjoint components)
