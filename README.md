@@ -32,7 +32,7 @@ The scheme includes an dynamic step size which bounds the spatial step size and 
 - [config.py](config.py) contains the configuration parameters for the Mobius energy gradient computation such as .obj file and visualization parameters.\
 - [curve.py](curve.py) contains geometry manipulation utility functions such as reading obj files.
 
-## Result
+# Results
 ### Closed reef knot (two disjoint components)
 ![reefknot.gif](./assets/reeefknot.gif)
 ### Torus knot $T_{4,1}$
