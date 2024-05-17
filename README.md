@@ -1,8 +1,10 @@
 # numerical-knot-untangling
 Read the paper [here](./assets/paper/numerical_knot_untangling.pdf).
 
+# Overview
+
 This is a research project for untangling knots numerically, consisting of an implementation for the Möbius knot energy minimization.  
-# Mobius energy
+## Mobius energy
 The **Möbius energy** is defined as such:
 
 $$
@@ -28,7 +30,7 @@ Since we are iterating over a discrete set $M$ of $s$ values representing the in
 
 The gradient of this summation is computed and implemented in [mobius.py](mobius.py) as the function `Mobius_gradient`.
 
-# Gradient flow approximation
+## Gradient flow approximation
 Implements a simple forward Euler method with respect to the above system. 
 The scheme includes an dynamic step size which bounds the spatial step size and helps with stability.
 
@@ -36,7 +38,8 @@ The main file is [mobius.py](mobius.py) which the Mobius energy gradient computa
 The file [config.py](config.py) contains the configuration parameters for the Mobius energy gradient computation such as .obj file and visualization parameters.\
 The file [curve.py](curve.py) contains the geometry manipulation function utility functions such as reading obj files.
 
-## Results 
+# Results
+
 ### Torus knot $T_{4,1}$ (untangles to the unknot)
 ![torus.gif](./assets/torus.gif)
 ### Overhand (untangles to the trefoil)
@@ -47,3 +50,7 @@ Trefoil for reference:
 ![trefoil](./assets/trefoil.png)
 ### Closed reef knot (untangles to two unknot components.)
 ![reefknot.gif](./assets/reefknot.gif)
+
+
+
+
