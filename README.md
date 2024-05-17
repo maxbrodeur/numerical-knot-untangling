@@ -14,8 +14,9 @@ where:
 - $d(u,v)$ denotes the shortest distance  between $u$ and  $v$ *along* the curve 
 
 ### Energy computation on 2D hourglass curve
-<!-- center the gif -->
+
 ![hourglass_computation.gif](./assets/hourglass_computation.gif)
+
 Roughly, since the curve $\gamma$ is completely described by a list of vertices, we use the following system
 
 $$
