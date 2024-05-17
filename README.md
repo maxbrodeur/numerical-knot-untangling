@@ -1,4 +1,5 @@
 # numerical-knot-untangling
+Read the paper [here](./assets/paper/numerical_knot_untangling.pdf).
 
 This is a research project for untangling knots numerically, consisting of an implementation for the Möbius knot energy minimization.  
 # Mobius energy
